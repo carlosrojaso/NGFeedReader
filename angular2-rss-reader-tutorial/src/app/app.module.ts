@@ -5,11 +5,14 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { FeedCardComponent } from './feed-card/feed-card.component';
+import { StripHtmlTagsPipe } from './pipe/strip-html-tags.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FeedCardComponent
+    FeedCardComponent,
+    FeedCardComponent,
+    StripHtmlTagsPipe
   ],
   imports: [
     BrowserModule,

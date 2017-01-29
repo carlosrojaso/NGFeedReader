@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeedCardComponent implements OnInit {
 
+  @Input() feed: any;
   constructor() { }
 
   ngOnInit() {

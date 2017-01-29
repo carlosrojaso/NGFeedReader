@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-feed-card',
@@ -8,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class FeedCardComponent implements OnInit {
 
   @Input() feed: any;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  private openLinkInBrowser() {
+    window.open(this.feed.link);
+  }
 }
